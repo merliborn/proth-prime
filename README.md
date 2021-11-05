@@ -9,7 +9,7 @@ By: Lat.S (@merliborn)
 
 Algorithm:
 
-- Raymond Couture, and Pierre L'Ecuyer. (1997) Distribution Properties of Multiply-with-Carry Random Number Generators, *Mathematics of Computation* 66(218), pp. 591&ndash;607. ISSN:1088-6842, doi:[10.1090/S0025-5718-97-00827-2](https://doi.org/10.1090/S0025-5718-97-00827-2), JSTOR:[2153884](https://www.jstor.org/stable/2153884).
+- Sze, Tsz-Wo (施子和). (2018) *Deterministic Primality Proving on Proth Numbers*. Unpublished, arXiv:[0812.2596](https://arxiv.org/abs/0812.2596)
 
 ## Usage
 
