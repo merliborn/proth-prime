@@ -1,0 +1,58 @@
+name:                proth-prime
+version:             0.1.0.0
+# github:              "githubuser/proth-prime"
+license:             MIT
+license-file:        LICENSE
+author:              "merliborn"
+maintainer:          "sourei.merlin@gmail.com"
+copyright:           "2021 merliborn"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+synopsis:            Primability test for proth numbers
+category:            Math
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+# description:         Please see the README on GitHub at <https://github.com/githubuser/proth-prime#readme>
+
+dependencies:
+- base >= 4.12 && < 5
+- safe-exceptions
+- groups
+
+library:
+  source-dirs: src
+  exposed-modules:
+#   - Math.Proth
+    - Math.Elliptic.Singular
+    - Math.Elliptic.Singular.Safe
+  other-modules: []
+  dependencies:
+    - partial-operations ^>= 0.1.0.0
+
+#executables:
+#  proth-prime-exe:
+#    main:                Main.hs
+#    source-dirs:         app
+#    ghc-options:
+#    - -threaded
+#    - -rtsopts
+#    - -with-rtsopts=-N
+#    dependencies:
+#    - proth-prime
+
+tests:
+  proth-prime-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - proth-prime

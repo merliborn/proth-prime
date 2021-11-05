@@ -1,0 +1,2 @@
+{"rule":"NON_STANDARD_WORD","sentence":"^\\QLatest update: 2021-08-22 By: Lat.S (@merliborn)\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QLatest update: 2021-08-22 By: Lat.S (@merliborn)\\E$"}

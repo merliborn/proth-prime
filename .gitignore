@@ -1,0 +1,6 @@
+.stack-work/
+doc/
+*~
+
+# vscode workspace setting
+.vscode/settings.json
