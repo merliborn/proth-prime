@@ -44,7 +44,7 @@ By: Lat.S (@merliborn)
 
 ## ライセンス
 
-- Haskellモジュールの全体は[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)で提供
+- Haskellモジュールの全体はMIT Licenseで提供
 
 ### このテキストのライセンス
 
