@@ -144,6 +144,12 @@ toSingularECPoint md b i
 
 -- |
 -- Cast into base 'Integral' type.
+--
+-- >>> asIntegral (Pt 5 1 2)
+-- Just 2
+--
+-- >>> asIntegral Infty
+-- Nothing
 asIntegral :: (Integral i) => SingularECPoint i -> Maybe i
 asIntegral Infty          = Nothing
 asIntegral (Pt mds prm i) = Just i

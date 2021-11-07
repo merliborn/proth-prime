@@ -56,3 +56,12 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - proth-prime
+  proth-prime-doctest:
+    main:                test/testdoc.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - proth-prime
+    - doctest
