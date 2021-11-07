@@ -11,6 +11,17 @@ packages:
       sha256: d6ed2dcf3d49c4cd8f72b6e965dec2e47ab1361ad9795ecc952de941396a0f0f
   original:
     hackage: modular-arithmetic-2.0.0.1
+- completed:
+    name: partial-operations
+    version: 0.1.0.0
+    git: https://github.com/merliborn/partial-operations.git
+    pantry-tree:
+      size: 795
+      sha256: 334f6716430927aeb62677ccc0d9e0cc7c2511515a591bd2af244c0c0550f186
+    commit: 38e16fdc7c2f897433667f2418b59286772bc78b
+  original:
+    git: https://github.com/merliborn/partial-operations.git
+    commit: 38e16fdc7c2f897433667f2418b59286772bc78b
 snapshots:
 - completed:
     size: 586268

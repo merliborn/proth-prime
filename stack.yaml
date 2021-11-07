@@ -43,7 +43,8 @@ packages:
 #
 extra-deps: 
 - modular-arithmetic-2.0.0.1
-- git: merliborn/partial-operations
+- git: https://github.com/merliborn/partial-operations.git
+  commit: 38e16fdc7c2f897433667f2418b59286772bc78b
 
 # Override default flag values for local packages and extra-deps
 # flags: {}
