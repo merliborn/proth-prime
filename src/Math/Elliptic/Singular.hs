@@ -149,10 +149,11 @@ instance (Integral i) => Semigroup (SingularECPoint i) where
     | gcd (x+y) md /= 1   = throw NotPrimeModulus
     | otherwise           = case modInv m0 (x+y) of
                               Nothing -> throw NotPrimeModulus
-                              Just rc -> let r = (x * y + b0) * rc `mod` md in
-                                if r^2 `mod` md == b0  then throw NotPrimeModulus
+                              Just rc -> let r = (x * y + bb) * rc `mod` md in
+                                if r^2 `mod` md == bb  then throw NotPrimeModulus
                                   else Pt m0 b0 r
     where md = fromInteger $ toInteger m0
+          bb = b0 * b1 `mod` md
 
 instance (Integral i) => Monoid (SingularECPoint i) where
   mempty = Infty
