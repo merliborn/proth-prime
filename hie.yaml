@@ -1,0 +1,10 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "proth-prime:lib"
+    - path: "./test/testdoc.hs"
+      component: "proth-prime:test:proth-prime-doctest"
+    - path: "./test/Spec.hs"
+      config:
+        cradle:
+          none:
