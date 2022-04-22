@@ -52,7 +52,7 @@ test-suite proth-prime-elliptic-test
       Paths_proth_prime
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.12 && <5
+      base
     , groups
     , proth-prime
     , safe-exceptions

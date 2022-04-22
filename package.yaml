@@ -75,3 +75,5 @@ tests:
     - proth-prime
     - tasty
     - tasty-hunit
+    - base
+    - groups
