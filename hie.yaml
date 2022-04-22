@@ -4,6 +4,8 @@ cradle:
       component: "proth-prime:lib"
     - path: "./test/testdoc.hs"
       component: "proth-prime:test:proth-prime-doctest"
+    - path: "./test/Singular.hs"
+      component: "proth-prime:test:proth-prime-elliptic-test"
     - path: "./test/Spec.hs"
       config:
         cradle:
