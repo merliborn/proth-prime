@@ -79,9 +79,11 @@ import Control.Exception.Safe -- safe-exceptions
 
   See "Deterministic Primality Proving on Proth Numbers" by Tsz-Wo Sze (arXiv:0812.2596 [math.NT]).
 -}
--- | A point on singular curve \(y^2 = x^2(x+\alpha) \) over \(\mathbb{Z}/{N\mathbb{Z}}\cup\{\infty\}\)
--- 
--- The value of type 'SingularECPoint' can be constructed by using 'infty' or 'toSingularECPoint'.
+{-|
+  A point on singular curve \(y^2 = x^2(x+\alpha) \) over \(\mathbb{Z}/{N\mathbb{Z}}\cup\{\infty\}\)
+
+  The value of type 'SingularECPoint' can be constructed by using 'infty' or 'toSingularECPoint'.
+-}
 data SingularECPoint i where
   Pt    :: Integral i => Natural-> i-> i-> SingularECPoint i
   Infty :: SingularECPoint i

@@ -64,7 +64,13 @@ import Data.Group(Group(..))
 -- ****************************
 -- Proth test
 -- ****************************
-pptest :: (Integral a) => a-> a-> Bool
+{-|
+  Plain Proth test.
+-}
+pptest :: (Integral a) => 
+  a->   --^ coefficient should be odd
+  a->   --^ index
+  Bool
 pptest = undefined
 
 -- ****************************
