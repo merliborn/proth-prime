@@ -8,8 +8,15 @@ import Numeric.Natural(Natural)
 import Data.Group (Group(..))
 
 import Math.Elliptic.Singular
+import qualified Math.Elliptic.Singular.Safe as S
 
-main = defaultMain tEllipticSingular
+main = defaultMain testSuite
+
+testSuite :: TestTree
+testSuite = testGroup "Tests for Elliptic.Singular modules"
+  [
+    tEllipticSingular
+  ]
 
 tEllipticSingular :: TestTree
 tEllipticSingular = testGroup "Tests for Elliptic.Singular (unsafe)"
@@ -19,12 +26,19 @@ tEllipticSingular = testGroup "Tests for Elliptic.Singular (unsafe)"
                         tGroupOpetarion
                       ]
 
+tEllipticSingularSafe :: TestTree
+tEllipticSingularSafe = testGroup "Tests for Elliptic.Singular.Safe"
+                      [
+
+                      ]
+
 tShowECPData :: TestTree
 tShowECPData = testGroup "Showing Data"
   [
     testCase "show infty" $ show (infty::SingularECPoint Natural) @=? "Infty",
     testCase "show (Pt md pr i)" $ show (toSingularECPoint 3 1 0) @=? "Pt 3 1 0"
   ]
+
 tConvertECPData :: TestTree
 tConvertECPData = testGroup "Converting SingularECPoint <--> Number"
   [
