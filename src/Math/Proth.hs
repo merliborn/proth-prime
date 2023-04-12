@@ -68,8 +68,8 @@ import Data.Group(Group(..))
   Plain Proth test.
 -}
 pptest :: (Integral a) => 
-  a->   --^ coefficient should be odd
-  a->   --^ index
+  a->   --  coefficient should be odd
+  a->   --  index
   Bool
 pptest = undefined
 
